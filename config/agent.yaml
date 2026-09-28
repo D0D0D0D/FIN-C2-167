@@ -1,0 +1,26 @@
+# Agent Manifest — AgentRegistry entry point.
+# 静的マニフェスト。ランタイムのチューナブルは config/config.yaml に置く。
+
+id: "FIN-C2-167"
+name: "Corporate Bond Prospectus Disclosure-Control Diff Review Agent"
+namespace: "fin"
+version: "1.0.0"
+enabled: true
+category: "Cat 2"
+# Static generation contract. Omitted by legacy templates defaults to deterministic.
+# This AG drives its LLM stage through the config["llm"] injection seam (BaseLLM), so the
+# truthful declaration is llm — omitting it would record an LLM template as deterministic.
+generation_mode: "llm"  # deterministic | llm
+industry: "FIN"
+base_type: "AgentBaseGraph"
+class: "src.graph.graph.ProspectusDisclosureReviewGraph"
+required_trust_level: "VERIFIED_EXTERNAL"
+requires:
+  extras: []
+  secrets: []
+
+# HITL capability declaration (manifest level).
+# Tunables (max_hitl / memory_enabled / timeouts) live in config/config.yaml.
+# The PB-7 proof-of-boundary stub and the HITL review check read this top-level block.
+hitl:
+  enabled: true

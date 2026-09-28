@@ -1,0 +1,4 @@
+schema_owner: "顧客開示統制責任部門"
+version: 1
+required_fields: [facts, evidence_sources, unreflected_facts, inconsistencies, review_questions]
+prohibited_fields: [legal_compliance_verdict, issuance_approved, pricing]

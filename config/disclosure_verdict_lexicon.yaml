@@ -1,0 +1,12 @@
+schema_owner: "顧客開示統制責任部門"
+last_reviewed_at: "2026-07-23"
+version: 1
+categories:
+  legal_compliance:
+    patterns: ["重要な虚偽記載なし", "開示は適正", "法令適合", "compliant disclosure"]
+  issuance_approval:
+    patterns: ["発行可能", "発行を承認", "issuance approved"]
+  investment_verdict:
+    patterns: ["投資判断上問題ない", "投資判断に問題ない"]
+non_assertive_replacement_template: "本記載は開示統制上の確認事項として、発行体・主幹事・弁護士による確認を要します。"
+disclaimer: "本エージェントは法令適合判定、発行承認又は価格決定を行いません。"

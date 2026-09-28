@@ -1,0 +1,20 @@
+schema_owner: "顧客開示統制責任部門"
+disclosure_section:
+  - business
+  - risk_factors
+  - mdna
+  - financial_statements
+  - related_party
+  - material_contracts
+  - litigation
+  - subsequent_events
+  - use_of_proceeds
+source_kind:
+  - risk_register
+  - board_material
+  - financial_forecast
+  - material_contract
+  - litigation_record
+  - prior_disclosure
+diff_kind: [unreflected, inconsistency, needs_explanation]
+severity_class: [material, significant, minor]

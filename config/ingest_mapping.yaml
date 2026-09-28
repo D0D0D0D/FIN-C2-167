@@ -1,0 +1,14 @@
+internal_source:
+  source_record_id: source_record_id
+  source_kind: source_kind
+  fact_summary: fact_summary
+  disclosure_section: disclosure_section
+  provenance: provenance
+  asserted_attrs: asserted_attrs
+  quality_flag: quality_flag
+prior_disclosure:
+  source_record_id: source_record_id
+  disclosure_section: disclosure_section
+  version: version
+  asserted_attrs: asserted_attrs
+  disclosed_on: disclosed_on
